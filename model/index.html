@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="1985_le_mans_ferrari_f40-lm.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.png" shadow-intensity="2" shadow-softness="1" exposure="0.96" environment-image="aircraft_workshop_01_1k.hdr" auto-rotate camera-orbit="-1512deg 84.22deg 42.2m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="-0.3138209694240004m 4.585370433597548m 0.7000292483605648m" data-normal="-0.6858784203236438m -0.511462649806608m -0.5176647084620954m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">1985 Ferrari F40 LM</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
