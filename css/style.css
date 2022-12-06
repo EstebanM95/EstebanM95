@@ -1,0 +1,19 @@
+#fondo{
+    background-image: radial-gradient(to bottom right, #5433ff,#20dbff, #a5fecb);
+}
+#body{
+    
+    background-image: radial-gradient(to bottom right, #5433ff,#20dbff, #a5fecb);
+
+}
+#presentacion{
+background-color: gainsboro;
+border-radius: 10px;
+padding: 2px;
+text-align: justify;
+
+}
+
+.texto{
+    text-align: center;
+}
