@@ -6,10 +6,7 @@ function colorChanger() {
   let b = "#" + Math.floor(Math.random() * 16777215).toString(16);
 
   // cambia el fondo por una gradiente lineal con los 3 colores random como parametros
-  document.getElementById(
-    "fondo"
-  ).style.backgroundImage = `linear-gradient(to bottom right, ${r}, ${g}, ${b})`;
-  //document.getElementById("body").style.backgroundImage = `linear-gradient(to bottom right, ${r}, ${g}, ${b})`;
+  document.getElementsByClassName("fondo")[0].style.background = `linear-gradient(to bottom right, ${r}, ${g}, ${b})`;
 }
 
 

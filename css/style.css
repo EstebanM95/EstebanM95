@@ -1,5 +1,5 @@
-#fondo{
-    background-image: radial-gradient(to bottom right, #5433ff,#20dbff, #a5fecb);
+.fondo{
+    background: linear-gradient(to bottom right, #5433ff,#20dbff, #a5fecb);
 }
 
 h1{
@@ -19,4 +19,14 @@ min-width:max-content;
 
 .texto{
     text-align: center;
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
